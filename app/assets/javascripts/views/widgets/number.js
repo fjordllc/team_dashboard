@@ -49,7 +49,8 @@
     },
 
     getValueAsString: function(value) {
-      return helpers.suffixFormatter(value, 1);
+//      return helpers.suffixFormatter(value, 1);
+      return String(value);
     },
 
     getLabel: function() {
