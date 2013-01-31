@@ -222,4 +222,8 @@
     }
   };
 
+  helpers.numberFormatter = function(val) {
+    return val.toString().replace(/([\d]+?)(?=(?:\d{3})+$)/g, function(t){ return t + ','; });
+  };
+
 })($, _, Backbone, bootbox, List, app.collections, app.helpers);

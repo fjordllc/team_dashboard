@@ -50,7 +50,7 @@
 
     getValueAsString: function(value) {
 //      return helpers.suffixFormatter(value, 1);
-      return String(value);
+      return helpers.numberFormatter(value);
     },
 
     getLabel: function() {
