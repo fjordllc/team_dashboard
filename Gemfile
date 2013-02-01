@@ -18,6 +18,7 @@ gem "multi_xml", "~> 0.5.1"
 gem "libxml-ruby", "~> 2.3.3"
 gem "nokogiri", "~> 1.5.5"
 gem "certified"
+gem "mixpanel_client"
 
 group :production do
   gem "activerecord-postgresql-adapter"
