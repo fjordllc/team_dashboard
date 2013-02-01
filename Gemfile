@@ -9,7 +9,6 @@ gem "rails-backbone", "~> 0.7.2"
 gem "handlebars_assets", "~> 0.6.4"
 
 gem "mysql2", "~> 0.3.11"
-gem "activerecord-postgresql-adapter"
 
 gem "thin", "~> 1.4.1"
 gem "foreman"
@@ -19,6 +18,10 @@ gem "multi_xml", "~> 0.5.1"
 gem "libxml-ruby", "~> 2.3.3"
 gem "nokogiri", "~> 1.5.5"
 gem "certified"
+
+group :production do
+  gem "activerecord-postgresql-adapter"
+end
 
 group :test, :development do
   gem "rspec-rails"
