@@ -1,5 +1,6 @@
 module Api
   class BaseController < ApplicationController
+    http_basic_authenticate_with name: 'admin', password: 'fjordllc', only: [:create, :update, :destroy]
     respond_to :json
 
     rescue_from Exception, :with => :show_internal_server_error
